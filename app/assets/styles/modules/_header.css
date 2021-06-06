@@ -14,7 +14,7 @@
   }
 
   @media (min-width: 68.75em){ /* 1100px = 68.75em */
-    grid-template-columns: 10em 4em repeat(9, auto) 8em;
+    grid-template-columns: 10em 3.7em repeat(9, auto) 8em;
   }
 
   /* this style only applies to the home page - it allows the hero image to take up the entire section */

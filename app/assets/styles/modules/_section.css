@@ -1,0 +1,75 @@
+.section{
+  padding: 0 5vw;
+
+  @media (min-width: 62em){ /* 992px = 62em */
+    padding: 0;
+  }
+
+  
+  /* the following relates to images that start on the 
+     left edge of screen and content to the right of it. 
+  */
+
+  /* image that starts on the left edge of the sreen */
+  &__left-image{
+    grid-column: 1/-1;
+    position: relative;
+    margin-bottom: 15px;
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 1/7;
+      margin-bottom: 0;
+    }
+    
+  }
+  
+  /* the heading that appears on top of the image that starts at the left edge of the screen. */
+  &__heading{
+    grid-column: 1/-1;
+    position: absolute !important;
+    top: -50px;
+    left: 0;
+    right: 0;
+
+    @media (min-width: 32.0625em){ /* 513px = 32.0625em */
+      width: 7em;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      top: -60px;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      top: -70px ;
+      margin-left: 5vw;
+    }
+
+    @media (min-width: 68.75em){ /* 1100px = 68.75em */
+      margin-left: 10vw;
+    }
+  
+  }
+
+
+  /* content to the right of the image */
+  &__right-content{
+    grid-column: 1/-1;
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 8/12;
+      margin-top: 170px;
+      align-self: center;   
+    }
+
+    @media (min-width: 101.75em){ /* 1628px = 101.75em */
+      margin-top: 0;
+    }
+
+  }
+
+
+}

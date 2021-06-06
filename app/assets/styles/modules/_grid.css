@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2,1fr);
 
-  @media (min-width:48em){ /* 768px = 48em */
+  @media (min-width: 48em){ /* 768px = 48em */
     grid-template-columns: repeat(6,1fr);
   }
 

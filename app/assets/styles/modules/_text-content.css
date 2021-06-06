@@ -1,0 +1,23 @@
+.text-content{
+  font-family: Avenir, sans-serif;
+  line-height: 1.59;
+  margin-top: 15px;
+  margin-bottom: 30px;
+
+  &--white{
+    color: #fff;
+    font-size: 21px;
+    line-height: 1.17;
+    font-weight: 500;
+
+    @media (min-width:40em){
+      font-size: 23px;
+    }
+
+  }
+
+  &--grey{
+    color: $grey;
+  }
+
+}
