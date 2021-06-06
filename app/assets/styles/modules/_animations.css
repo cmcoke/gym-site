@@ -61,6 +61,20 @@
 }
 
 
+/* animates the arrow that is to the right of the "more info" text in the hero section of the home page */
+@keyframes bouncingArrow {
+
+  0%, 20%, 50%, 80%, 100% {
+    background-position: 100% 50%;
+  }
+  40% {
+    background-position: 100% 90%;
+  }
+  60% {
+    background-position: 100% 80%;
+  }
+
+}
 
 
 

@@ -1,0 +1,13 @@
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+  @media (min-width:48em){ /* 768px = 48em */
+    grid-template-columns: repeat(6,1fr);
+  }
+
+  @media (min-width: 62em){ /* 992px = 62em */
+    grid-template-columns: repeat(12,1fr);
+  }
+
+}

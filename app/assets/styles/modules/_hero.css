@@ -1,0 +1,109 @@
+.hero{
+  min-height: calc( 100vh - 280px);
+  margin-bottom: 115px;
+
+  @media (min-width:48em){ /* 768px = 48em */
+    margin-bottom: 195px;
+  }
+
+
+  /* the home page' hero image */
+  &__image{
+    grid-column: 1/-1;
+    grid-row: 1;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/-1;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 3/-1;
+    }
+  
+  }
+
+
+   /* contains the main heading and the 'join us now' button  that is on top of the hero image. */
+  &__content{
+    grid-column: 1/-1;
+    grid-row: 1;
+    align-self: center;
+    margin-top: 118px;
+    margin-right: 5vw;
+    margin-bottom: 80px;
+    margin-left: 5vw;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    z-index: 1;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/4;
+      margin-left: -10vw;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 3/7;
+    }
+
+    @media (min-width: 68.75em){ /* 1100px = 68.75em */
+      margin-left: -6.7vw;
+    }
+
+    /* 1400px = 87.5em, 800px = 50em */ 
+    @media ( max-width: 87.5em) and ( min-width: 50em) and ( max-height: 50em) {
+      width: 600px;
+    }
+
+  }
+
+
+  /* this css rule targets the main heading of the hero section  */
+  &__heading{
+  
+    @media (min-width: 26.125em) { /* 418px = 26.125em */ 
+      width: 5em;
+    }
+
+  }
+
+
+  /* css rule for the 'more info' link  */
+  &__more-content{
+    grid-column: 1/-1;
+    grid-row: 1;
+    align-self: end;
+    justify-self: start;
+    display: inline-block;
+    color: #fff;
+    font-family: $mont;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2.9px;
+    text-transform: uppercase;
+    background-image: url("assets/images/icons/arrow.png");
+    background-size: 21px;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+    margin-top: 33px;
+    margin-bottom: 20px;
+    margin-left: 5vw;
+    animation:  bouncingArrow 2s infinite;
+    z-index: 1;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/3;
+      margin-left: -10vw;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 3/4;
+    }
+
+    @media (min-width: 68.75em){ /* 1100px = 68.75em */
+      margin-left: -6.7vw;
+    }
+    
+  }
+
+
+}
