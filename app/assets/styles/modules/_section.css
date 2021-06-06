@@ -1,12 +1,6 @@
 .section{
-  padding: 0 5vw;
 
-  @media (min-width: 62em){ /* 992px = 62em */
-    padding: 0;
-  }
-
-  
-  /* the following relates to images that start on the 
+  /* NOTE: the following relates to images that start on the 
      left edge of screen and content to the right of it. 
   */
 
