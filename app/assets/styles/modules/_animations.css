@@ -1,0 +1,66 @@
+/* fade in effect to display the header menu content when the mobile menu icon is clicked on mobile screens. */
+@keyframes fade-in {
+
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+.fade-in{
+  animation: fade-in 300ms ease-in-out forwards;
+}
+
+
+/* fade out effect to remove the header menu content when the 'X' button is clicked on mobile screens. */
+@keyframes fade-out {
+
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+}
+
+.fade-out{
+  animation: fade-out 300ms ease-in-out forwards;
+}
+
+
+/* fade in effect for the header navigation links on mobile view */
+@keyframes navLinkFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+
+
+
