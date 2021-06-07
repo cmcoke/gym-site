@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
 @import "normalize.css";
+@import "@glidejs/glide/dist/css/glide.core.css";
+@import "@glidejs/glide/dist/css/glide.theme.css";
 @import "base/_global";
 @import "base/_variables";
 @import "modules/_header";
@@ -14,3 +16,4 @@
 @import "modules/_text-content";
 @import "modules/_offer";
 @import "modules/_info";
+@import "modules/_testimonial";

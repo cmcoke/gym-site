@@ -2,10 +2,10 @@ import '../styles/styles.css'
 import 'lazysizes'
 import 'picturefill'
 import MobileMenu from './modules/MobileMenu'
-
+import TestimonialSlider from './modules/TestimonialSlider'
 
 let mobileMenu = new MobileMenu();
-
+let testimonialSlider = new TestimonialSlider();
 
 
 
