@@ -10,7 +10,7 @@
   }
 
   @media (min-width: 62em){ /* 992px = 62em */
-    grid-template-columns: 10em repeat(9, auto) 1em 6em;
+    grid-template-columns: 10em 1.8fr 5.5em;
   }
 
   @media (min-width: 68.75em){ /* 1100px = 68.75em */
@@ -30,7 +30,7 @@
 
   }
 
-  /* company' logo */
+  /* gym' logo */
   &__logo{
     grid-column: 1/2;
     grid-row: 1/2;
@@ -69,7 +69,7 @@
       height: auto;
       opacity: 1;
       visibility: visible !important;
-      grid-column: 2/12;
+      grid-column: 2/3;
       grid-row: 1/2;
       justify-self: center;
     }
@@ -99,8 +99,12 @@
     z-index: 4;
     
     @media (min-width: 62em){ /* 992px = 62em */
-      grid-column: 12/13;
+      grid-column: 3/4;
       margin: 0;
+    }
+
+    @media (min-width: 68.75em){ /* 1100px = 68.75em */
+      grid-column: 12/13;
     }
 
     & >:not(:last-child){
