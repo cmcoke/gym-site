@@ -1,5 +1,17 @@
 .section{
 
+  &--about-hero{
+    margin-top: 55px;
+    margin-bottom: 55px;
+
+
+    @media (min-width: 48em){  /* 768px = 48em */
+      margin-top: 55px;
+      margin-bottom: 55px;
+    }
+
+  }
+
   /* NOTE: the following relates to images that start on the 
      left edge of screen and content to the right of it. 
   */
@@ -61,6 +73,41 @@
 
     @media (min-width: 101.75em){ /* 1628px = 101.75em */
       margin-top: 0;
+    }
+
+  }
+
+  
+  /* NOTE: the following relates to images that are full width
+     with a heading on top of it.
+  */
+  &__full-width-image{
+    grid-column: 1/-1;
+    height: 70vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    position: relative;
+  }
+
+
+  /* heading that appear on top & center over an image */
+  &__heading-center{
+    grid-column: 1/-1;
+    position: absolute !important;
+    top: -60px;
+    left: 0 !important;
+    right: 0 !important;
+    text-align: center !important;
+    width: 100% !important;
+
+    @media (min-width: 29.9375em){ /* 479px = 29.9375em */
+      max-width: 6em !important;
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+
+    @media (min-width: 68.75em){ /* 1100px = 68.75em */
+      top: -75px;
     }
 
   }

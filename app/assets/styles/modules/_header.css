@@ -17,8 +17,8 @@
     grid-template-columns: 10em 3.7em repeat(9, auto) 8em;
   }
 
-  /* this style only applies to the home page - it allows the hero image to take up the entire section */
-  &__home-page{
+  /* this style allows the header section to take up the entire section */
+  &__position-absolute{
 
     @media (max-width: 47.9375em) { /* 47.9375em = 767px */
       position: absolute;
