@@ -20,4 +20,20 @@
     color: $grey;
   }
 
+  &--footer{
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 14px;
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    @media (min-width: 68.75em){ /* 1100px = 68.75em */
+      text-align: center;
+    }
+
+  }
+
 }

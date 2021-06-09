@@ -1,0 +1,150 @@
+.footer{
+  text-align: center;
+  padding: 70px 0 50px;
+
+  @media (min-width:48em){ /* 768px = 48em */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 15rem)) 1fr; 
+    grid-template-rows: 5em 18em 2em;
+    text-align: left;
+    padding: 0 5vw 75px 5vw;
+  }
+
+  @media (min-width: 62em){ /* 992px = 62em */
+    grid-template-columns: 1fr minmax(11em, 22em) repeat(3, minmax(min-content, 14rem)) 1fr; 
+    grid-template-rows: 19.5em 2em;
+    column-gap: 10px;
+  }
+
+  @media (min-width: 68.75em){ /* 1100px = 68.75em */
+   padding: 0 10vw 75px 10vw;
+  }
+
+  /* gym' footer logo */
+  &__logo{
+    
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 1/3;
+      grid-row: 1/2;
+      justify-self: start;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 2/3;
+      align-self: center;
+    }
+
+  }
+
+
+  /*  contains the site' main navigation links. */
+  &__sitemap{
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+
+  }
+
+
+  /*  refers to the different classes the gym offers. */
+  &__classes{
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 4/5;
+      grid-row: 1/2;
+    }
+
+  }
+
+
+  /* contact information for the gym */
+  &__contact{
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 5/6;
+      grid-row: 1/2;
+    }
+
+  }
+
+
+  &__sitemap, &__classes{
+    margin-bottom: 20px;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      margin-bottom: 0;
+    }
+
+  }
+
+  
+  /* individual list items */
+  &__list{
+    color: $grey;
+    font-family: $mont;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    margin-top: 13px;
+  }
+
+
+  /* individual link items */
+  &__link{
+    color: $grey;
+    line-height: 1.5 !important;
+    transition: all 0.3s ease-in;
+
+    &:hover{
+      color: #fff;
+    }
+
+  }
+
+
+  /* the site' creator */
+  &__creator{
+    color: $grey;
+    font-family: $mont;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    margin-top: 40px;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 1/4;
+      grid-row: 3/4;
+      align-self: end;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 1/-1;
+      grid-row: 2/3;
+      justify-self: center;
+      margin-top: 0;
+    }
+    
+  }
+
+}
