@@ -1,11 +1,42 @@
 .info{
 
-  /* 991px =  61.9375em  &  620px = 38.75em */
-  @media (max-width: 61.9375em) and (min-width: 38.75em){
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 0px 30px;
+
+  /* this styles relates to info block that have a 1 column layout on desktop screens 
+     but 2 column on tablet screens.
+  */
+  &__one-column-layout{
+
+    @media (max-width: 61.9375em){  /* 991px =  61.9375em */
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      column-gap: 5rem;
+    }
+
+  }
+
+    /* this styles relates to a info block that have 3 column layout on desktop screens 
+     but 2 column on tablet screens.
+  */
+  &__three-column-layout{
+    
+    @media (min-width: 39.375em){ /* 630px = 39.375em */
+      display: grid;
+      grid-template-columns: repeat(2, minmax(auto, 1fr));
+      column-gap: 4rem;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-template-columns: repeat(3, minmax(auto, 1fr));
+    }
+
+    @media (min-width: 85.875em){ /* 1374px = 85.875em */
+      column-gap: 7rem;
+    }
+
+    @media (min-width: 137.125em){ /* 2194pxpx = 137.125em */
+      column-gap: 10rem;
+    }
+
   }
 
 }

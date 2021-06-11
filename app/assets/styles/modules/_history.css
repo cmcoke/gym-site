@@ -1,0 +1,86 @@
+.history{
+
+  /* main heading */
+  &__heading{
+    grid-column: 2/4;
+    grid-row: 1/2;
+
+    @media (min-width: 41.75em){ /* 668px = 41.75em */
+      width: 10em;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/6;
+      width: 8em;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      width: 9em;
+    }
+
+    @media (min-width: 68.75em){ /* 1100px = 68.75em */
+      width: 10em;
+    }
+
+  }
+
+  /* relates to the two column white & grey text content */
+  &__text-content{
+    grid-column: 2/4;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/6;
+
+      /* creates a two column grid in order to have better control of layout for the
+         white & grey text content.
+      */
+      display: grid;
+      grid-template-columns: minmax(auto, 21rem) minmax(auto, 33rem);
+      column-gap: 1.25rem;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 2/9;
+      column-gap: 3.125rem;
+    }
+
+    @media (min-width: 68.75em){ /* 1100px = 68.75em */
+      column-gap: 6rem;
+    }
+
+  }
+
+  /* white text content */
+  &__text-content--white{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  /* grey text content */
+  &__text-content--grey{
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+  }
+
+
+  /*  contains the 3X3 layout of the info content  */
+  &__info{
+    grid-column: 2/4;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/6;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 2/10;
+    }
+
+  }
+
+
+}

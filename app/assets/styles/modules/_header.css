@@ -1,40 +1,21 @@
 .header{
-  display: grid;
-  grid-template-columns: 10em 1fr 8em;
-  grid-template-rows: 5.625rem;
-  align-items:center;
-  padding: 0 5vw;
-
-  @media (min-width:48em){ /* 768px = 48em */
-    grid-template-rows: 8.75rem;
-  }
-
-  @media (min-width: 62em){ /* 992px = 62em */
-    grid-template-columns: 10em 1.8fr 5.5em;
-  }
-
-  @media (min-width: 68.75em){ /* 1100px = 68.75em */
-    grid-template-columns: 10em 3.7em repeat(9, auto) 8em;
-  }
-
-  /* this style allows the header section to take up the entire section */
-  &__position-absolute{
-
-    @media (max-width: 47.9375em) { /* 47.9375em = 767px */
-      position: absolute;
-      top: 0%;
-      right: 0%;
-      bottom: auto;
-      left: 0%;
+  height: 140px;
+    
+  /* company' logo */
+  &__logo{
+    grid-column: 2/3;
+    align-self: center;
+    z-index: 4;
+    
+    @media (min-width: 68.75em){ /* 1100px = 68.75em */
+      grid-column: 1/3;
+      justify-self: center;
+      margin-left: 40px;
     }
 
-  }
-
-  /* gym' logo */
-  &__logo{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    z-index: 4;
+    @media (min-width: 77.625em){ /* 1242px = 77.625em */
+      margin-left: 0;
+    }
     
     & img{
       max-width: 8.125rem; /* 130px = 8.125rem */
@@ -46,6 +27,7 @@
     }
 
   }
+
 
   /* contains the site' main navigation links */
   &__menu-content{
@@ -60,6 +42,10 @@
     z-index: 3;
     
     @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 3/9;
+      align-self: center;
+      justify-self: center;
+      margin-left: 60px;
       background-color: transparent;
       position: relative;
       top: auto;
@@ -69,15 +55,17 @@
       height: auto;
       opacity: 1;
       visibility: visible !important;
-      grid-column: 2/3;
-      grid-row: 1/2;
-      justify-self: center;
     }
 
     @media (min-width: 68.75em){ /* 1100px = 68.75em */
-      justify-self: start;
-      grid-column: 3/12;
+      grid-column: 3/9;
     }
+    
+    @media (min-width: 77.625em){ /* 1242px = 77.625em */
+      justify-self: start;
+      /* margin-left: 0px; */
+    }
+
 
     /* shows the main navigation when the mobile menu icon is clicked */
     &--is-open{
@@ -86,6 +74,7 @@
     }
 
   }
+
 
   /* contains search, user profile & mobile menu icons */
   &__right-content{
@@ -97,27 +86,34 @@
     justify-self: end;
     margin-right: 25px;
     z-index: 4;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 5/6;
+    }
     
     @media (min-width: 62em){ /* 992px = 62em */
-      grid-column: 3/4;
-      margin: 0;
+      grid-column: 9/10;
+      justify-self: center;
+      margin-right: -45px;
     }
 
     @media (min-width: 68.75em){ /* 1100px = 68.75em */
-      grid-column: 12/13;
+      grid-column: 9/10;
+      justify-self: center;
+      margin-right: 0;
     }
 
     & >:not(:last-child){
-      margin-right: 25px;
+      margin-right: 28px;
       
       @media (min-width: 62em){ /* 992px = 62em */
-        margin-right: 5px;
-        margin-left: 19px;
+        margin-right: 1px;
+        margin-left: 33px;
       }
 
       @media (min-width: 68.75em){ /* 1100px = 68.75em */
-        margin-right: 29px;
-        margin-left: 0;
+        margin-right: 20px;
+        margin-left: 20px;
       }
 
     }
@@ -126,18 +122,17 @@
 
   /* search icon */
   &__search{
-  
+
     @media (min-width: 62em){ /* 992px = 62em */
       margin-right: 25px;
     }
 
   }
 
-
   /* mobile menu icon */
   &__mobile-menu-icon{
     position: absolute;
-    top: 3px;
+    top: 59px;
     right: -14px;
     width: 20px;
     height: 19px;
@@ -177,7 +172,7 @@
 
     /* creates the X button when the mobile menu icon is clicked */
     &--close{
-      top: 4px;
+      top: 58px;
 
       &::before {
         transform: translateX(3px) rotate(45deg) translateY(3px);
@@ -204,6 +199,22 @@
     
     @media (min-width: 62em){ /* 992px = 62em */
       display: none;
+    }
+
+  }
+
+
+  /* this style allows the hero section to take up the entire section with the header section
+     on top of it.
+  */
+  &__position-absolute{
+
+    @media (max-width: 47.9375em) { /* 47.9375em = 767px */
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      bottom: auto;
+      left: 0%;
     }
 
   }

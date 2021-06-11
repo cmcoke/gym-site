@@ -1,5 +1,10 @@
 .testimonial{
   position: relative;
+  margin-bottom: 110px;
+
+  @media (min-width: 68.75em){ /* 1100px = 68.75em */
+    margin-bottom: 175px;
+  }
 
   /* testimonial section background image */
   &__image{
@@ -42,6 +47,7 @@
       padding-top: 94px;
       padding-bottom: 94px;
     }
+
   }
 
   /* client's - profile image, name & occupation */

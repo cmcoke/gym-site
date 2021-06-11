@@ -24,4 +24,12 @@
 
   }
 
+  &__padding{
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      padding: 0 5vw;
+    }
+
+  }
+
 }

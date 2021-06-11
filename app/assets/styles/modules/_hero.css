@@ -13,7 +13,7 @@
     grid-row: 1;
 
     @media (min-width: 48em){ /* 768px = 48em */
-      grid-column: 2/-1;
+      grid-column: 3/-1;
     }
 
     @media (min-width: 62em){ /* 992px = 62em */
@@ -23,7 +23,9 @@
   }
 
 
-   /* contains the main heading and the 'join us now' button  that is on top of the hero image. */
+   /* contains the main heading and the 'join us now' button  
+      that is on top of the hero image. 
+   */
   &__content{
     grid-column: 1/-1;
     grid-row: 1;
@@ -37,16 +39,12 @@
     z-index: 1;
 
     @media (min-width: 48em){ /* 768px = 48em */
-      grid-column: 2/4;
-      margin-left: -10vw;
+      grid-column: 1/4;
     }
 
     @media (min-width: 62em){ /* 992px = 62em */
-      grid-column: 3/7;
-    }
-
-    @media (min-width: 68.75em){ /* 1100px = 68.75em */
-      margin-left: -6.7vw;
+      grid-column: 2/5;
+      margin-left: 0;
     }
 
     /* 1400px = 87.5em, 800px = 50em */ 
@@ -91,16 +89,12 @@
     z-index: 1;
 
     @media (min-width: 48em){ /* 768px = 48em */
-      grid-column: 2/3;
-      margin-left: -10vw;
+      grid-column: 1/3;
     }
 
     @media (min-width: 62em){ /* 992px = 62em */
-      grid-column: 3/4;
-    }
-
-    @media (min-width: 68.75em){ /* 1100px = 68.75em */
-      margin-left: -6.7vw;
+      grid-column: 2/4;
+      margin-left: 0;
     }
     
   }

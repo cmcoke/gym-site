@@ -1,6 +1,7 @@
 .footer{
   text-align: center;
   padding: 70px 0 50px;
+  margin-top: 175px;
 
   @media (min-width:48em){ /* 768px = 48em */
     display: grid;
@@ -12,7 +13,7 @@
 
   @media (min-width: 62em){ /* 992px = 62em */
     grid-template-columns: 1fr minmax(11em, 22em) repeat(3, minmax(min-content, 14rem)) 1fr; 
-    grid-template-rows: 19.5em 2em;
+    grid-template-rows: 19.5em 5em;
     column-gap: 10px;
   }
 
@@ -20,7 +21,7 @@
    padding: 0 10vw 75px 10vw;
   }
 
-  /* gym' footer logo */
+  /* company' footer logo */
   &__logo{
     
     @media (min-width: 48em){ /* 768px = 48em */
