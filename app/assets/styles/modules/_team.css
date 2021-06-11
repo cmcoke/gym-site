@@ -1,0 +1,133 @@
+.team{
+
+
+  @media (min-width: 33.125em){ /* 530px = 33.125em */
+    margin-top: 25px;
+  }
+
+  @media (min-width: 48em){ /* 768px = 48em */
+    margin-top: 50px;
+  }
+
+  
+  /* team section main heading */
+  &__heading{
+    grid-column: 2/4;
+    grid-row: 1/2;
+
+    @media (min-width: 33.125em){ /* 530px = 33.125em */
+      width: 7em;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      width: 5em;
+    }
+
+  }
+
+
+  /*  left & right arrows for navigating the team slider */
+  &__navigation{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: end;
+    z-index: 2;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 5/6;
+      align-self: center;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 9/10;
+    }
+
+  }
+
+
+  /* adds space between the left & right arrow  & makes the cursor a pointer when hovered over.*/
+  &__left-arrow{
+    margin-right: 40px;
+    cursor: pointer;
+  }
+
+  &__right-arrow{
+    cursor: pointer;
+  }
+
+
+  /* team member profile image & modal button image */
+  &__image{
+    position: relative;
+  }
+
+
+  /* modal button image */
+  &__modal-button{
+    position: absolute;
+    bottom: 3%;
+    right: 4%;
+    cursor: pointer;
+  }
+
+
+  /* team member info - name & role */
+  &__info{
+    margin-top: 10px;
+    
+    @media (min-width: 30em){ /* 480px = 30em */
+      margin-top: -40px;
+    }
+    
+  }
+
+
+  /* team member name */
+  &__name{
+    margin-bottom: 0;
+    margin-left: 0;
+    
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      width: 11em;
+    }
+
+  }
+
+
+  /* team member role */
+  &__role{
+    margin-top: -10px;
+    margin-left: 0;
+  }
+
+
+  /* glidejs custom css */
+  & .glide{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    margin-top: 20px;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/-1;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 2/-1;
+    }
+
+  }
+
+  & .glide--swipeable{
+    cursor: grab;
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      cursor: auto;
+    }
+
+  }
+
+}
