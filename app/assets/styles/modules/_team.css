@@ -1,5 +1,5 @@
 .team{
-
+  margin-bottom: 90px;
 
   @media (min-width: 33.125em){ /* 530px = 33.125em */
     margin-top: 25px;

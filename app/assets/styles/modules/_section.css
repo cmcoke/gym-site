@@ -1,13 +1,22 @@
 .section{
 
-  &--about-hero{
+  &--about-hero,{
     margin-top: 55px;
     margin-bottom: 55px;
 
+  }
 
+  &--about-class{
+    margin-top: 190px;
+    margin-bottom: 0px;
+ 
+  
     @media (min-width: 48em){  /* 768px = 48em */
-      margin-top: 55px;
-      margin-bottom: 55px;
+      margin-top: 50px;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      margin-top: 250px;
     }
 
   }
@@ -173,6 +182,7 @@
   */
   &__full-width-image{
     grid-column: 1/-1;
+    grid-row: 1;
     height: 70vh;
     margin-right: 5vw;
     margin-left: 5vw;
@@ -198,6 +208,59 @@
 
     @media (min-width: 68.75em){ /* 1100px = 68.75em */
       top: -75px;
+    }
+
+  }
+
+  /* this refers to heading that appear on the top left of full width images. */
+  &__heading-left{
+    grid-column: 2/4;
+    grid-row: 1;
+    margin-top: -110px !important;
+    text-align: center;
+    
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/5;
+      text-align: left;
+    }
+    
+    @media (min-width: 51.625em){ /* 826px = 51.625em */
+      /* width: 7em; */
+    }
+    
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 2/9;
+    }
+
+    @media (min-width: 77.75em){ /* 1244px = 77.75em */
+      width: 50em;
+    }
+    
+  }
+  
+  /* this refers to the line that appears under the word 'here' in the sentence
+     'view the various classes here.' in the 'about' page.
+  */
+  &__link{
+    position: relative;
+    color: #fff; 
+
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      height: 6px;
+      width: 100%;
+      background-color: #fff;
+      transform: scaleX(1);
+      transform-origin: bottom left;
+      transition: transform 0.3s;
+    }
+
+    &:hover:after{
+      transform: scaleX(0);
+      transform-origin: bottom right;
     }
 
   }
