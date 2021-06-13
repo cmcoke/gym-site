@@ -1,14 +1,4 @@
 .team{
-  margin-bottom: 90px;
-
-  @media (min-width: 33.125em){ /* 530px = 33.125em */
-    margin-top: 25px;
-  }
-
-  @media (min-width: 48em){ /* 768px = 48em */
-    margin-top: 50px;
-  }
-
   
   /* team section main heading */
   &__heading{
@@ -113,6 +103,7 @@
 
     @media (min-width: 48em){ /* 768px = 48em */
       grid-column: 2/-1;
+      margin-top: 0;
     }
 
     @media (min-width: 62em){ /* 992px = 62em */

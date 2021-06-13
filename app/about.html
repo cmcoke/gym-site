@@ -54,50 +54,47 @@
       <main>
 
         <!-- HERO -->
-        <section class="section section--about-hero grid">
+        <section class="section section__about-hero grid">
 
-          <div class="section__full-width-image">
+          <picture class="section__full-width-image">
+            <source
+            media="(max-width: 767px)"
+            sizes="(max-width: 767px) 100vw, 767px"
+            srcset="
+            assets/images/about/about_jkxwzz_ar_3_4,c_fill,g_auto__c_scale,w_767.jpg 767w">
+            <source
+            media="(min-width: 768px) and (max-width: 991px)"
+            sizes="(max-width: 991px) 100vw, 991px"
+            srcset="
+            assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_768.jpg 768w,
+            assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_991.jpg 991w">
+            <source
+            media="(min-width: 992px) and (max-width: 1199px)"
+            sizes="(max-width: 1199px) 100vw, 1199px"
+            srcset="
+            assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_992.jpg 992w,
+            assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_1199.jpg 1199w">
+            <img
+            sizes="(max-width: 2600px) 100vw, 2600px"
+            srcset="
+            assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_1200.jpg 1200w,
+            assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_1520.jpg 1520w,
+            assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_1812.jpg 1812w,
+            assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_2056.jpg 2056w,
+            assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_2298.jpg 2298w,
+            assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_2529.jpg 2529w,
+            assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_2600.jpg 2600w"
+            src="assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_2600.jpg"   
+            alt="a gym member and a kettle bell" class="image-cover image-filter"> 
+          </picture>
 
-            <picture>
-              <source
-              media="(max-width: 767px)"
-              sizes="(max-width: 767px) 100vw, 767px"
-              srcset="
-              assets/images/about/about_jkxwzz_ar_3_4,c_fill,g_auto__c_scale,w_767.jpg 767w">
-              <source
-              media="(min-width: 768px) and (max-width: 991px)"
-              sizes="(max-width: 991px) 100vw, 991px"
-              srcset="
-              assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_768.jpg 768w,
-              assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_991.jpg 991w">
-              <source
-              media="(min-width: 992px) and (max-width: 1199px)"
-              sizes="(max-width: 1199px) 100vw, 1199px"
-              srcset="
-              assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_992.jpg 992w,
-              assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_1199.jpg 1199w">
-              <img
-              sizes="(max-width: 2600px) 100vw, 2600px"
-              srcset="
-              assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_1200.jpg 1200w,
-              assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_1520.jpg 1520w,
-              assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_1812.jpg 1812w,
-              assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_2056.jpg 2056w,
-              assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_2298.jpg 2298w,
-              assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_2529.jpg 2529w,
-              assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_2600.jpg 2600w"
-              src="assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_2600.jpg"   
-              alt="a gym member and a kettle bell" class="image-cover image-filter"> 
-            </picture>
-
-            <h1 class="heading section__heading-center">meet the team. know our past, present & future.</h1>
-
-          </div>
+          <h1 class="heading section__heading-center">meet the team. know our past, present & future.</h1>
 
         </section>
 
+
         <!-- HISTORY -->
-        <section class="history grid">
+        <section class="page-section history grid">
 
           <h2 class="heading history__heading">We’ve created an environment that is geared towards making you be your best.</h2>
 
@@ -149,11 +146,11 @@
 
           </div>
  
-
         </section>
 
+
         <!-- TEAM -->
-        <section class="team grid">
+        <section class="page-section team grid">
 
           <h2 class="heading team__heading">Our team of fitness experts</h2>
 
@@ -161,8 +158,6 @@
             <img id="prev" src="assets/images/icons/previous.png" alt="left arrow" class="team__left-arrow">
             <img id="next" src="assets/images/icons/next.png" alt="right arrow" class="team__right-arrow">
           </div>
-
-      
 
           <div class="glide">
 
@@ -465,9 +460,10 @@
           </div> 
 
         </section>
+        
 
         <!-- VALUES -->
-        <section class="page-section page-section__no-padding section grid ">
+        <section class="page-section section grid ">
 
           <picture class="section__left-image">
             <source
@@ -506,10 +502,10 @@
             assets/images/about/values_hiwiif_ar_16_9,c_fill,g_auto__c_scale,w_2317.jpg 2317w,
             assets/images/about/values_hiwiif_ar_16_9,c_fill,g_auto__c_scale,w_2400.jpg 2400w"
             src="assets/images/about/values_hiwiif_ar_16_9,c_fill,g_auto__c_scale,w_2400.jpg" 
-            alt="gym members in a class" class="image-cover image-filter"> 
+            alt="a gym member training" class="image-cover image-filter"> 
           </picture>
 
-          <h2 class="heading section__left-image-heading section__left-image-heading--values">We are more than a gym, this is what we stand for as a team.</h2>
+          <h2 class="heading section__left-heading">More than experts, this is what we stand for as a team.</h2>
           
           <div class="section__right-content info__one-column-layout">
 
@@ -543,11 +539,11 @@
 
 
         <!-- LINK THE 'ABOUT' PAGE TO THE 'CLASS' PAGE -->
-        <section class="section section--about-class grid">
+        <section class="page-section section">
 
-          <div class="section__full-width-image">
+          <a href="class.html" class="grid">
 
-            <picture>
+            <picture class="section__full-width-image">
               <source
               media="(max-width: 767px)"
               sizes="(max-width: 767px) 100vw, 767px"
@@ -578,13 +574,12 @@
               alt="a group of gym members resting" class="image-cover image-filter"> 
             </picture>
 
-          </div>
+            <div class="section__about-to-class">
+              <p class="text-content text-content--grey">ARE YOU INTRESTED IN THE CLASSES WE OFFER?</p>
+              <h1 class="heading">View our classes here.</h1>
+            </div>
 
-          
-          <div class="section__heading-left">
-            <p class="text-content text-content--grey">ARE YOU INTRESTED IN THE CLASSES WE OFFER?</p>
-            <h1 class="heading ">view the various classes <a href="class.html" class="section__link">here</a>.</h1>
-          </div>
+          </a>
 
         </section>
 

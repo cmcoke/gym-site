@@ -8,6 +8,8 @@ class TeamSlider{
     let nextSlide = document.querySelector('#next');
     let previousSlide = document.querySelector('#prev');
 
+
+
     for (let i = 0; i < sliders.length; i++) {
       let glide = new Glide(sliders[i], {
         type: 'carousel',
@@ -52,6 +54,7 @@ class TeamSlider{
             dragThreshold: true,
           }
         }
+        
       });
 
       nextSlide.addEventListener('click', function () {
@@ -61,8 +64,9 @@ class TeamSlider{
       previousSlide.addEventListener('click', function () {
         glide.go('<')
       })
-    
-      glide.mount()
+
+
+      glide.mount();
     }
     
   }

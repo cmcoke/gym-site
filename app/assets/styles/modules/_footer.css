@@ -1,7 +1,6 @@
 .footer{
   text-align: center;
   padding: 70px 0 50px;
-  margin-top: 20px;
 
   @media (min-width:48em){ /* 768px = 48em */
     display: grid;
@@ -20,7 +19,6 @@
 
   @media (min-width: 68.75em){ /* 1100px = 68.75em */
    padding: 0 10vw 75px 10vw;
-   margin-top: 110px;
   }
 
   /* company' footer logo */

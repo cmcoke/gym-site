@@ -1,37 +1,28 @@
 .section{
 
-  &--about-hero,{
-    margin-top: 55px;
-    margin-bottom: 55px;
-
+  &__about-hero{
+    margin-top: 90px;
   }
 
-  &--about-class{
-    margin-top: 190px;
-    margin-bottom: 0px;
+  &__class-page{
+    color: #fff;
+  }
+
+
  
-  
-    @media (min-width: 48em){  /* 768px = 48em */
-      margin-top: 50px;
-    }
-
-    @media (min-width: 62em){ /* 992px = 62em */
-      margin-top: 250px;
-    }
-
-  }
-
-
-  
   /* PLEASE NOTE: the following relates to images that start on the 
      left edge of screen and content to the right of it. 
   */
 
   /* image that starts on the left edge of the sreen */
   &__left-image{
-    grid-column: 1/-1;
+    grid-column: 2/4;
     grid-row: 1/2;
     margin-bottom: 15px;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/6;
+    }
 
     @media (min-width: 62em){ /* 992px = 62em */
       grid-column: 1/6;
@@ -40,9 +31,9 @@
 
   }
   
-  /* the heading that appears on top of the image that starts at the left edge of the screen. */
-  &__left-image-heading{
-    grid-column: 1/-1;
+  /* the heading that appears on top left of the image that starts on the left edge of the sreen  */
+  &__left-heading{
+    grid-column: 2/4;
     grid-row: 1/2;
     margin-top: -35px !important;
 
@@ -53,7 +44,7 @@
     }
 
     @media (min-width: 48em){ /* 768px = 48em */
-      grid-column: 1/5;
+      grid-column: 2/6;
       margin-top: -50px !important;
       margin-right: 0;
       margin-left: 0;
@@ -65,20 +56,14 @@
 
   }
 
-  /* this is modified version for the values section on the about page */
-  &__left-image-heading--values{
-
-    @media (min-width: 29.1875em){ /* 467px = 32.0625em */
-      width: 8em;
-      margin-right: auto;
-      margin-left: auto;
-    }
-
-  }
 
   /* content to the right of the image */
   &__right-content{
-    grid-column: 1/-1;
+    grid-column: 2/4;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/6;
+    }
 
     @media (min-width: 62em){ /* 992px = 62em */
       grid-column: 7/10;
@@ -119,7 +104,7 @@
   }
 
   /* heading on the right */
-  &__right-image-heading{
+  &__right-heading{
     grid-column: 2/4;
     grid-row: 1;
     margin-top: -35px !important;
@@ -129,7 +114,6 @@
       margin-right: auto;
       margin-left: auto;
     }
-
 
     @media (min-width: 48em){ /* 768px = 48em */
       margin-top: -50px !important;
@@ -167,103 +151,97 @@
       margin-bottom: 30px;
       z-index: 2;
     }
-
+    
     @media (min-width: 88em){ /* 1408px = 88em */
-      grid-column: 2/4;
+      width: 28em;
       margin-top: 360px;
     }
 
   }
 
 
-
   /* PLEASE NOTE: the following relates to images that are full width
      with a heading on top of it.
   */
   &__full-width-image{
-    grid-column: 1/-1;
+    grid-column: 2/4;
     grid-row: 1;
-    height: 70vh;
-    margin-right: 5vw;
-    margin-left: 5vw;
-    position: relative;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/6;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 1/-1;
+      height: 70vh;
+      margin-right: 5vw;
+      margin-left: 5vw;
+    }
+
   }
 
 
   /* heading that appear on top & center over an image */
   &__heading-center{
-    grid-column: 1/-1;
-    position: absolute !important;
-    top: -60px;
-    left: 0 !important;
-    right: 0 !important;
-    text-align: center !important;
-    width: 100% !important;
-
-    @media (min-width: 29.9375em){ /* 479px = 29.9375em */
-      max-width: 6em !important;
-      margin-right: auto !important;
-      margin-left: auto !important;
-    }
-
-    @media (min-width: 68.75em){ /* 1100px = 68.75em */
-      top: -75px;
-    }
-
-  }
-
-  /* this refers to heading that appear on the top left of full width images. */
-  &__heading-left{
     grid-column: 2/4;
     grid-row: 1;
-    margin-top: -110px !important;
+    margin-top: -35px !important;
+    text-align: center;
+
+    @media (min-width: 29.9375em){ /* 479px = 29.9375em */
+
+    }
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/6;
+      margin-top: -50px !important;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 3/9;
+    }
+
+    @media (min-width: 91.0625em){ /* 1457px = 91.0625em */
+      width: 7em;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+  }
+
+
+  /* contains the grey text content 'ARE YOU INTRESTED IN THE CLASSES WE OFFER?' &
+     white heading 'View our classes here.' which appears on the top left of a full width image 
+     at the bottom of the about page.
+  */
+  &__about-to-class{
+    grid-column: 2/4;
+    grid-row: 1;
+    color: #fff;
+    margin-top: -58px;
     text-align: center;
     
-    @media (min-width: 48em){ /* 768px = 48em */
-      grid-column: 2/5;
-      text-align: left;
-    }
-    
-    @media (min-width: 51.625em){ /* 826px = 51.625em */
-      /* width: 7em; */
-    }
-    
-    @media (min-width: 62em){ /* 992px = 62em */
-      grid-column: 2/9;
+    @media (min-width: 33.1875em){ /* 33.1875em = 531px */
+      width: 24em;
+      margin-right: auto;
+      margin-left: auto;
     }
 
-    @media (min-width: 77.75em){ /* 1244px = 77.75em */
-      width: 50em;
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/4;
+      margin-top: -78px;
+      text-align: left;
+      width: auto;
+      margin-right: 0;
+      margin-left: 0;
     }
-    
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 2/7;
+      width: 33em;
+      margin-top: -58px;
+    }
+
   }
   
-  /* this refers to the line that appears under the word 'here' in the sentence
-     'view the various classes here.' in the 'about' page.
-  */
-  &__link{
-    position: relative;
-    color: #fff; 
-
-    &:after{
-      content: '';
-      position: absolute;
-      bottom: 2px;
-      left: 0;
-      height: 6px;
-      width: 100%;
-      background-color: #fff;
-      transform: scaleX(1);
-      transform-origin: bottom left;
-      transition: transform 0.3s;
-    }
-
-    &:hover:after{
-      transform: scaleX(0);
-      transform-origin: bottom right;
-    }
-
-  }
-
-
 }

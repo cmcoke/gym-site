@@ -17,9 +17,11 @@ class TestimonialSlider{
         swipeThreshold: false,
         dragThreshold: false,
       });
-    
+      
+     
       glide.mount()
     }
+
     
   }
 
