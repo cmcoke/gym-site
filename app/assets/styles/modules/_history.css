@@ -68,19 +68,5 @@
   }
 
 
-  /*  contains the 3X3 layout of the info content  */
-  &__info{
-    grid-column: 2/4;
-
-    @media (min-width: 48em){ /* 768px = 48em */
-      grid-column: 2/6;
-    }
-
-    @media (min-width: 62em){ /* 992px = 62em */
-      grid-column: 2/10;
-    }
-
-  }
-
 
 }

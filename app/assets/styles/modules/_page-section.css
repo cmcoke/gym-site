@@ -7,5 +7,22 @@
     margin-bottom: 175px;
   }
 
+  &--margin-top{
+    margin-top: 20px;
+
+    @media (min-width: 48em){  /* 768px = 48em */
+      margin-top: 50px;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      margin-top: 130px;
+    }
+
+  }
+
+  &--margin-bottom{
+    margin-bottom: 0;
+  }
+
 
 }

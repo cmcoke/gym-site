@@ -1,0 +1,122 @@
+.gallery{
+
+  /* current & total slide numbers */
+  &__slide-numbers{
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    margin-top: 20px;
+    font-family: Tungsten, sans-serif;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      justify-self: start;
+    }
+    
+  }
+
+  /* current slide number */
+  &__current-slide-number{
+    z-index: 2;
+
+    @media (max-width: 478px){
+      font-size: 12px;
+      line-height: 252px;
+    }
+
+    @media (max-width: 767px){
+      font-size: 152px;
+      line-height: 252px;
+    }
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      font-size: 252px;
+      line-height: 1;
+      letter-spacing: 1.4px;
+      margin-top: -150px;
+    }
+
+  }
+
+
+  /* total slide number */
+  &__total-slides-number{
+    display: inline-block;
+    margin-left: 10px;
+    line-height: 1;
+    letter-spacing: 1.4px;
+    align-self: center;
+
+    @media (max-width: 767px){
+      font-size: 32px;
+    }
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      font-size: 42px;
+    }
+
+  }
+
+
+  /* left & right navigation arrows */
+  &__navigation{
+    grid-column: 3/4;
+    justify-self: end;
+    align-self: center;
+    justify-self: center;
+    margin-top: 20px;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 5/6;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 9/10;
+      margin-top: 0;
+    }
+
+  }
+
+
+  /* left arrow */
+  &__navigation-left-arrow{
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+
+
+  /* right arrow */
+  &__navigation-right-arrow{
+    cursor: pointer;
+  }
+
+
+  /* gallery instructions */
+  &__instructions{
+    display: none;
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      display: block;
+      grid-column: 5/7;
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+
+  }
+
+
+  /* flickity custom css */
+  & .carousel-cell{
+    position: relative;
+    width: 89%;
+    height: auto;
+  }
+
+
+}

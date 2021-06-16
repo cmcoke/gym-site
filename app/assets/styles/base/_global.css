@@ -95,3 +95,9 @@ ul {
   font-style: normal;
   font-display: auto;
 }
+
+
+/* flickity custom css */
+.carousel-cell-custom-size{
+  width: 100%;
+}

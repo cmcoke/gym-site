@@ -1,13 +1,18 @@
 import '../styles/styles.css'
 import 'lazysizes'
 import 'picturefill'
+import 'flickity'
+import 'flickity-imagesloaded'
+import 'flickity-fade'
 import MobileMenu from './modules/MobileMenu'
-import TestimonialSlider from './modules/TestimonialSlider'
-import TeamSlider from './modules/TeamSlider'
+import Testimonials from './modules/Testimonials'
+import Team from './modules/Team'
+import Gallery from './modules/Gallery'
 
 let mobileMenu = new MobileMenu();
-let testimonialSlider = new TestimonialSlider();
-let teamSlider = new TeamSlider();
+let testimonials = new Testimonials();
+let team = new Team();
+let gallery = new Gallery();
 
 
 

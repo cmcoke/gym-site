@@ -92,11 +92,21 @@
   &__role{
     margin-top: -10px;
     margin-left: 0;
+    font-size: 19px;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      font-size: 22px;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      font-size: 24px;
+    }
+
   }
 
 
-  /* glidejs custom css */
-  & .glide{
+  /* flickty custom css */
+  & .main-carousel{
     grid-column: 2/4;
     grid-row: 2/3;
     margin-top: 20px;
@@ -112,13 +122,22 @@
 
   }
 
-  & .glide--swipeable{
-    cursor: grab;
+  & .carousel-cell{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      width: 50%;
+    }
 
     @media (min-width: 62em){ /* 992px = 62em */
-      cursor: auto;
+      width: 30%;
+      margin-right: 15px;
     }
 
   }
+
 
 }

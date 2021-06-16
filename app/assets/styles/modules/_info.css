@@ -1,5 +1,13 @@
 .info{
+  grid-column: 2/4;
 
+  @media (min-width: 48em){ /* 768px = 48em */
+    grid-column: 2/6;
+  }
+
+  @media (min-width: 62em){ /* 992px = 62em */
+    grid-column: 2/10;
+  }
 
   /* this styles relates to info block that have a 1 column layout on desktop screens 
      but 2 column on tablet screens.
