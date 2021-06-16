@@ -1,23 +1,37 @@
 .grid{
   display: grid;
   grid-template-columns:
-  minmax(2vw, 5vw) 
-  repeat(2,1fr)
-  minmax(2vw, 5vw);
+    minmax(2vw, 5vw) 
+    repeat(2,1fr)
+    minmax(2vw, 5vw);
   
-
   @media (min-width: 48em){ /* 768px = 48em */
     grid-template-columns:
-    minmax(2vw, 5vw) 
-    repeat(4, minmax(2rem, 50ch))
-    minmax(2vw, 5vw);
+      minmax(2vw, 5vw) 
+      repeat(4, minmax(2rem, 50ch))
+      minmax(2vw, 5vw);
   }
 
   @media (min-width: 62em){ /* 992px = 62em */
     grid-template-columns:
-    minmax(4vw, 10vw) 
-    repeat(8, minmax(7rem, 50ch))
-    minmax(4vw, 10vw);
+      minmax(4vw, 10vw) 
+      repeat(8, minmax(7rem, 50ch))
+      minmax(4vw, 10vw);
+  }
+
+
+  &--section{
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-template-columns:
+        minmax(4vw, 10vw) 
+        repeat(8, minmax(7rem, 50ch))
+        minmax(4vw, 10vw);
+      grid-template-rows: 
+        minmax(11em, 19em) 
+        1fr;
+    }
+
   }
 
 

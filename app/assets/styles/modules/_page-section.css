@@ -15,7 +15,11 @@
     }
 
     @media (min-width: 62em){ /* 992px = 62em */
-      margin-top: 130px;
+      margin-top: 90px;
+    }
+
+    @media (min-width: 68.75em){ /* 1100px = 68.75em */
+      margin-top: 60px;
     }
 
   }

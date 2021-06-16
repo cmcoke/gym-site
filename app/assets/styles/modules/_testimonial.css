@@ -37,6 +37,17 @@
   }
 
 
+  /* testimonial section background image for group training page*/
+  &__personal-training{
+    grid-column: 1/-1;
+    grid-row: 1/3;
+    background-image: url('/assets/images/group-training/testimonial.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
   /* contains all carousel content */
   & .main-carousel{
     grid-column: 2/3;
