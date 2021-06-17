@@ -25,7 +25,6 @@
     background-size: cover;
   }
 
-
   /* testimonial section background image for personal training page*/
   &__personal-training{
     grid-column: 1/-1;
@@ -36,12 +35,21 @@
     background-size: cover;
   }
 
-
   /* testimonial section background image for group training page*/
-  &__personal-training{
+  &__group-training{
     grid-column: 1/-1;
     grid-row: 1/3;
     background-image: url('/assets/images/group-training/testimonial.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* testimonial section background image for group training page*/
+  &__crossfit{
+    grid-column: 1/-1;
+    grid-row: 1/3;
+    background-image: url('/assets/images/crossfit/testimonial.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
