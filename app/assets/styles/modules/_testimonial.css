@@ -55,6 +55,16 @@
     background-size: cover;
   }
 
+    /* testimonial section background image for yoga page*/
+    &__yoga{
+      grid-column: 1/-1;
+      grid-row: 1/3;
+      background-image: url('/assets/images/yoga/testimonial.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
 
   /* contains all carousel content */
   & .main-carousel{
