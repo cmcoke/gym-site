@@ -1,0 +1,134 @@
+.form{
+ display: grid;
+ grid-template-columns: 1fr;
+
+ @media (min-width: 600px){
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 6em) 1fr 5em;
+  column-gap: 10px;
+ }
+
+  /* input: first name */
+  &__fname{
+
+    @media (min-width: 600px){
+      grid-column: 1/2;
+      grid-row: 1/2;
+     }
+
+  }
+
+
+  /* input: last name */
+  &__lname{
+    
+    @media (min-width: 600px){
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+  }
+
+
+  /* input: email */
+  &__email{
+    
+    @media (min-width: 600px){
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+  }
+
+
+  /* input: topic */
+  &__topic{
+    
+    @media (min-width: 600px){
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+  }
+
+
+  /* textarea */
+  &__textarea{
+    resize: vertical;
+    height: 244px !important;
+    
+    @media (min-width: 600px){
+      grid-column: 1/3;
+      grid-row: 3/4;
+    }
+
+  }
+
+  /* refers to the input fields */
+  &__text-content{
+    display: block;
+    font-size: 21px;
+    line-height: 1.43;
+    color: #333;
+    background-color: #eee;
+    border: 1px solid #cccccc;
+    opacity: 1;
+    border-style: none;
+    width: 100%;
+    height: 38px;
+    padding: 43px;
+    margin-bottom: 10px;
+    outline: none;
+  }
+
+
+  /* submit button */
+  &__button{
+    position: relative;
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2.9px;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #fff;
+    padding: 33px 55px;
+    cursor: pointer;
+    border: none;
+    z-index: 1;
+    
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      background: $red;
+      z-index: -1;
+    }
+  
+    &:hover{
+      color: #fff;
+    }
+  
+    &::after{
+      height: 100%;
+      left: 0;
+      top: 0;
+      width: 0;
+      transition: all 0.3s;
+    }
+  
+    &:hover:after{
+      width: 100%;
+    }
+  
+    @media (min-width: 600px){
+      grid-column: 1/2;
+      width: 22em;
+    }
+
+  }
+
+
+
+}

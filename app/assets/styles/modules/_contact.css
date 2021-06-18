@@ -1,0 +1,82 @@
+.contact{
+
+
+  /* main heading title */
+  &__heading{
+    grid-column: 2/4;
+    text-align: center;
+    margin-bottom: 40px !important;
+    
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/6;
+      margin-bottom: 80px !important;
+    }
+  
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 2/9;
+      width: 6.5em;
+      text-align: left;
+      margin-top: 80px !important;
+    }
+
+  }
+
+
+  /* contains contact information & details  */
+  &__text-content{
+    grid-column: 2/4;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/6;
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 2/5;
+      padding-right: 17px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 89.875em){ /* 1438px = 89.875em */
+      grid-column: 2/4;
+      padding-right: 0px;
+    }
+
+  }
+
+  /* contains address, telephone number & email address */
+  &__details{
+    font-size: 17px;
+  }
+
+  /* styles the address, telephone number & email address  */
+  &__detail{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+
+  /* contact form */
+  &__form{
+    grid-column: 2/4;
+    margin-top: 30px;
+    font-family: Avenir, sans-serif;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/6;
+      margin-top: 0;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 5/10;
+    }
+
+    @media (min-width: 101.25em){ /* 1620px = 101.25m */
+      grid-column: 6/10;
+    }
+
+  }
+
+ 
+
+}

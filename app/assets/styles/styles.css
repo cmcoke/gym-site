@@ -20,3 +20,5 @@
 @import "modules/_team";
 @import "flickity/dist/flickity.min.css";
 @import "modules/_gallery";
+@import "modules/_contact";
+@import "modules/_form";
