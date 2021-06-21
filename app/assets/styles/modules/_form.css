@@ -1,73 +1,13 @@
 .form{
  display: grid;
  grid-template-columns: 1fr;
+ font-family: Avenir, sans-serif;
 
- @media (min-width: 600px){
-  grid-template-columns: repeat(2, 1fr); 
-  grid-template-rows: repeat(2, 6em) 1fr 5em;
-  column-gap: 10px;
- }
-
-  /* input: first name */
-  &__fname{
-
-    @media (min-width: 600px){
-      grid-column: 1/2;
-      grid-row: 1/2;
-     }
-
-  }
-
-
-  /* input: last name */
-  &__lname{
-    
-    @media (min-width: 600px){
-      grid-column: 2/3;
-      grid-row: 1/2;
-    }
-
-  }
-
-
-  /* input: email */
-  &__email{
-    
-    @media (min-width: 600px){
-      grid-column: 1/2;
-      grid-row: 2/3;
-    }
-
-  }
-
-
-  /* input: topic */
-  &__topic{
-    
-    @media (min-width: 600px){
-      grid-column: 2/3;
-      grid-row: 2/3;
-    }
-
-  }
-
-
-  /* textarea */
-  &__textarea{
-    resize: vertical;
-    height: 244px !important;
-    
-    @media (min-width: 600px){
-      grid-column: 1/3;
-      grid-row: 3/4;
-    }
-
-  }
 
   /* refers to the input fields */
   &__text-content{
     display: block;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 1.43;
     color: #333;
     background-color: #eee;
@@ -105,11 +45,11 @@
       background: $red;
       z-index: -1;
     }
-  
+
     &:hover{
       color: #fff;
     }
-  
+
     &::after{
       height: 100%;
       left: 0;
@@ -117,18 +57,113 @@
       width: 0;
       transition: all 0.3s;
     }
-  
+
     &:hover:after{
       width: 100%;
     }
-  
+
     @media (min-width: 600px){
       grid-column: 1/2;
-      width: 22em;
     }
 
   }
 
+
+ /* PLEASE NOTE: The following refers to the contact form on the contact page. */
+ &--contact{
+
+  @media (min-width: 600px){
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 6em) 1fr 5em;
+    column-gap: 10px;
+   }
+   
+ }
+
+  /* first name on contact page. */
+  &__contact-fname{
+
+    @media (min-width: 600px){
+      grid-column: 1/2;
+      grid-row: 1/2;
+     }
+
+  }
+
+
+  /* last name on contact page. */
+  &__contact-lname{
+    
+    @media (min-width: 600px){
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+  }
+
+
+  /* email on contact page. */
+  &__contact-email{
+    
+    @media (min-width: 600px){
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+  }
+
+
+  /* topic on contact page. */
+  &__contact-topic{
+    
+    @media (min-width: 600px){
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+  }
+
+
+  /* textarea on contact page. */
+  &__contact-textarea{
+    resize: vertical;
+    height: 244px !important;
+    
+    @media (min-width: 600px){
+      grid-column: 1/3;
+      grid-row: 3/4;
+    }
+
+  }
+
+  
+  /* PLEASE NOTE: This refers to the 'sign in' button on the login page. */
+  &__login-button{
+    margin-top: 20px;
+  }
+
+
+  /* PLEASE NOTE: This refers to the 'send' button on the reset password page. */
+  &__password-button{
+    margin-top: 20px;
+    width: 20em;
+  }
+
+
+  /* PLEASE NOTE: This refers to the registration form. */
+  &--registration{
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 10px;
+    }
+
+  }
+
+  &__registration-button{
+    width: 20em;
+    margin-top: 20px;
+  }
 
 
 }

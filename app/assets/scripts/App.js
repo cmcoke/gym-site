@@ -9,10 +9,12 @@ import Testimonials from './modules/Testimonials'
 import Team from './modules/Team'
 import Gallery from './modules/Gallery'
 
+
 let mobileMenu = new MobileMenu();
 let testimonials = new Testimonials();
 let team = new Team();
 let gallery = new Gallery();
+
 
 
 
