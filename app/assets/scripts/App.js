@@ -17,6 +17,22 @@ let gallery = new Gallery();
 
 
 
+// code splitting script for the 'SmoothScroll.js'
+let smoothScroll
+
+document.querySelectorAll('.hero__more-content').forEach(el => {
+  el.addEventListener('click', e => {
+    e.preventDefault()
+     if(typeof smoothScroll == 'undefined') {
+        import(/* webpackChunkName: 'smoothScroll' */ './modules/SmoothScroll').then(x => {
+          smoothScroll = new x.default()
+          setTimeout( () => smoothScroll.scroll(), 20)
+        }).catch(() => console.log('There was a problem.'))
+     } else {
+        smoothScroll.scroll()
+     }
+  })
+})
 
 
 

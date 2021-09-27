@@ -19,6 +19,7 @@ class Team{
         imagesLoaded: true,
         selectedAttraction: 0.03,
         friction: 0.5,
+        lazyLoad: true
       });
 
       // allows the carousel to move to the next item by cliking the right arrow.

@@ -57,12 +57,21 @@
       <section class="section page-section--margin-top grid">
 
         <picture class="section__full-width-image">
-          <source media="(max-width: 767px)" sizes="(max-width: 767px) 100vw, 767px" srcset="
+          <source 
+          media="(max-width: 767px)" 
+          sizes="(max-width: 767px) 100vw, 767px" 
+          srcset="
             assets/images/about/about_jkxwzz_ar_3_4,c_fill,g_auto__c_scale,w_767.jpg 767w">
-          <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 991px) 100vw, 991px" srcset="
+          <source 
+          media="(min-width: 768px) and (max-width: 991px)" 
+          sizes="(max-width: 991px) 100vw, 991px" 
+          srcset="
             assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_768.jpg 768w,
             assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_991.jpg 991w">
-          <source media="(min-width: 992px) and (max-width: 1199px)" sizes="(max-width: 1199px) 100vw, 1199px" srcset="
+          <source 
+          media="(min-width: 992px) and (max-width: 1199px)" 
+          sizes="(max-width: 1199px) 100vw, 1199px" 
+          srcset="
             assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_992.jpg 992w,
             assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_1199.jpg 1199w">
           <img sizes="(max-width: 2600px) 100vw, 2600px" srcset="
@@ -73,7 +82,7 @@
             assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_2298.jpg 2298w,
             assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_2529.jpg 2529w,
             assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_2600.jpg 2600w"
-            src="assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_2600.jpg"
+             src="assets/images/about/about_jkxwzz_ar_21_9,c_fill,g_auto__c_scale,w_2600.jpg"
             alt="a gym member and a kettle bell" class="image-cover image-filter">
         </picture>
 
@@ -160,8 +169,8 @@
         <h2 class="heading team__heading">Our team of fitness experts.</h2>
 
         <div class="team__navigation">
-          <img id="prev" src="assets/images/icons/previous.png" alt="left arrow" class="team__left-arrow">
-          <img id="next" src="assets/images/icons/next.png" alt="right arrow" class="team__right-arrow">
+          <img id="prev"  data-srcset="assets/images/icons/previous.png" alt="left arrow" class="team__left-arrow lazyload">
+          <img id="next"  data-srcset="assets/images/icons/next.png" alt="right arrow" class="team__right-arrow lazyload">
         </div>
 
         <div class="main-carousel">
@@ -173,25 +182,34 @@
               <div class="team__image">
 
                 <picture class="team__profile-image">
-                  <source media="(max-width: 767px)" sizes="(max-width: 920px) 100vw, 920px" srcset="
-                        assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_360.jpg 360w,
-                        assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_589.jpg 589w,
-                        assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_770.jpg 770w,
-                        assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
-                  <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 920px) 100vw, 920px"
-                    srcset="
-                        assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
-                        assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
-                  <source media="(min-width: 992px) and (max-width: 1199px)" sizes="(max-width: 920px) 100vw, 920px"
-                    srcset="
-                        assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
-                  <img sizes="(max-width: 920px) 100vw, 920px" srcset="
-                        assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w"
-                    src="assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg"
-                    alt="gym team member" class="image-cover">
+                  <source 
+                  media="(max-width: 767px)" 
+                  sizes="(max-width: 920px) 100vw, 920px" 
+                  srcset="
+                    assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_360.jpg 360w,
+                    assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_589.jpg 589w,
+                    assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_770.jpg 770w,
+                    assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                  <source 
+                  media="(min-width: 768px) and (max-width: 991px)" 
+                  sizes="(max-width: 920px) 100vw, 920px"
+                  srcset="
+                    assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
+                    assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                  <source 
+                  media="(min-width: 992px) and (max-width: 1199px)" 
+                  sizes="(max-width: 920px) 100vw, 920px"
+                  srcset="
+                    assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                  <img 
+                  sizes="(max-width: 920px) 100vw, 920px" 
+                  srcset="
+                    assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w"
+                  src="assets/images/about/team--1_lmi2im_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg"
+                  alt="gym team member" class="image-cover">
                 </picture>
 
-                <img src="assets/images/icons/plus.png" alt="plus sign" class="team__modal-button">
+                <img  data-srcset="assets/images/icons/plus.png" alt="plus sign" class="team__modal-button lazyload">
 
               </div>
 
@@ -211,25 +229,34 @@
               <div class="team__image">
 
                 <picture class="team__profile-image">
-                  <source media="(max-width: 767px)" sizes="(max-width: 920px) 100vw, 920px" srcset="
-                        assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_360.jpg 360w,
-                        assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_633.jpg 633w,
-                        assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_852.jpg 852w,
-                        assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
-                  <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 920px) 100vw, 920px"
-                    srcset="
-                        assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
-                        assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
-                  <source media="(min-width: 992px) and (max-width: 1199px)" sizes="(max-width: 920px) 100vw, 920px"
-                    srcset="
-                        assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
-                  <img sizes="(max-width: 920px) 100vw, 920px" srcset="
-                        assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w"
-                    src="assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg"
-                    alt="gym team member" class="image-cover">
+                  <source 
+                  media="(max-width: 767px)" 
+                  sizes="(max-width: 920px) 100vw, 920px" 
+                  srcset="
+                    assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_360.jpg 360w,
+                    assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_633.jpg 633w,
+                    assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_852.jpg 852w,
+                    assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                  <source 
+                  media="(min-width: 768px) and (max-width: 991px)" 
+                  sizes="(max-width: 920px) 100vw, 920px"
+                  srcset="
+                    assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
+                    assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                  <source 
+                  media="(min-width: 992px) and (max-width: 1199px)" 
+                  sizes="(max-width: 920px) 100vw, 920px"
+                  srcset="
+                    assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                  <img 
+                  sizes="(max-width: 920px) 100vw, 920px" 
+                  srcset="
+                    assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w"
+                  src="assets/images/about/team--2_swgral_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg"
+                  alt="gym team member" class="image-cover">
                 </picture>
 
-                <img src="assets/images/icons/plus.png" alt="plus sign" class="team__modal-button">
+                <img  data-srcset="assets/images/icons/plus.png" alt="plus sign" class="team__modal-button lazyload">
 
               </div>
 
@@ -249,27 +276,36 @@
               <div class="team__image">
 
                 <picture class="team__profile-image">
-                  <source media="(max-width: 767px)" sizes="(max-width: 920px) 100vw, 920px" srcset="
-                        assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_360.jpg 360w,
-                        assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_549.jpg 549w,
-                        assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_705.jpg 705w,
-                        assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_839.jpg 839w,
-                        assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
-                  <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 920px) 100vw, 920px"
-                    srcset="
-                        assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
-                        assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_891.jpg 891w,
-                        assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
-                  <source media="(min-width: 992px) and (max-width: 1199px)" sizes="(max-width: 920px) 100vw, 920px"
-                    srcset="
-                        assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
-                  <img sizes="(max-width: 920px) 100vw, 920px" srcset="
-                        assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w"
-                    src="assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg"
-                    alt="gym team member" class="image-cover">
+                  <source 
+                  media="(max-width: 767px)" 
+                  sizes="(max-width: 920px) 100vw, 920px" 
+                  srcset="
+                    assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_360.jpg 360w,
+                    assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_549.jpg 549w,
+                    assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_705.jpg 705w,
+                    assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_839.jpg 839w,
+                    assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                  <source 
+                  media="(min-width: 768px) and (max-width: 991px)" 
+                  sizes="(max-width: 920px) 100vw, 920px"
+                  srcset="
+                    assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
+                    assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_891.jpg 891w,
+                    assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                  <source 
+                  media="(min-width: 992px) and (max-width: 1199px)" 
+                  sizes="(max-width: 920px) 100vw, 920px"
+                  srcset="
+                    assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                  <img 
+                  sizes="(max-width: 920px) 100vw, 920px" 
+                  srcset="
+                    assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w"
+                  src="assets/images/about/team--3_craw24_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg"
+                  alt="gym team member" class="image-cover">
                 </picture>
 
-                <img src="assets/images/icons/plus.png" alt="plus sign" class="team__modal-button">
+                <img  data-srcset="assets/images/icons/plus.png" alt="plus sign" class="team__modal-button lazyload">
 
               </div>
 
@@ -289,27 +325,36 @@
               <div class="team__image">
 
                 <picture class="team__profile-image">
-                  <source media="(max-width: 767px)" sizes="(max-width: 920px) 100vw, 920px" srcset="
-                        assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_360.jpg 360w,
-                        assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_558.jpg 558w,
-                        assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_750.jpg 750w,
-                        assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_874.jpg 874w,
-                        assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
-                  <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 920px) 100vw, 920px"
-                    srcset="
-                        assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
-                        assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_880.jpg 880w,
-                        assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
-                  <source media="(min-width: 992px) and (max-width: 1199px)" sizes="(max-width: 920px) 100vw, 920px"
-                    srcset="
-                        assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
-                  <img sizes="(max-width: 920px) 100vw, 920px" srcset="
-                        assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w"
-                    src="assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg"
-                    alt="gym team member" class="image-cover">
+                  <source 
+                  media="(max-width: 767px)" 
+                  sizes="(max-width: 920px) 100vw, 920px" 
+                  srcset="
+                    assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_360.jpg 360w,
+                    assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_558.jpg 558w,
+                    assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_750.jpg 750w,
+                    assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_874.jpg 874w,
+                    assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                  <source 
+                  media="(min-width: 768px) and (max-width: 991px)" 
+                  sizes="(max-width: 920px) 100vw, 920px"
+                  srcset="
+                    assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
+                    assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_880.jpg 880w,
+                    assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                  <source 
+                  media="(min-width: 992px) and (max-width: 1199px)" 
+                  sizes="(max-width: 920px) 100vw, 920px"
+                  srcset="
+                    assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                  <img 
+                  sizes="(max-width: 920px) 100vw, 920px" 
+                  srcset="
+                    assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w"
+                  src="assets/images/about/team--4_bd9mvi_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg"
+                  alt="gym team member" class="image-cover">
                 </picture>
 
-                <img src="assets/images/icons/plus.png" alt="plus sign" class="team__modal-button">
+                <img  data-srcset="assets/images/icons/plus.png" alt="plus sign" class="team__modal-button lazyload">
 
               </div>
 
@@ -329,28 +374,37 @@
               <div class="team__image">
 
                 <picture class="team__profile-image">
-                  <source media="(max-width: 767px)" sizes="(max-width: 920px) 100vw, 920px" srcset="
-                        assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_360.jpg 360w,
-                        assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_577.jpg 577w,
-                        assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_769.jpg 769w,
-                        assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_870.jpg 870w,
-                        assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
-                  <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 920px) 100vw, 920px"
-                    srcset="
-                        assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
-                        assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_869.jpg 869w,
-                        assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
-                  <source media="(min-width: 992px) and (max-width: 1199px)" sizes="(max-width: 920px) 100vw, 920px"
-                    srcset="
-                        assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_992.jpg 992w,
-                        assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
-                  <img sizes="(max-width: 920px) 100vw, 920px" srcset="
-                        assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w"
-                    src="assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg"
-                    alt="gym team member" class="image-cover">
+                  <source 
+                  media="(max-width: 767px)" 
+                  sizes="(max-width: 920px) 100vw, 920px" 
+                  srcset="
+                    assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_360.jpg 360w,
+                    assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_577.jpg 577w,
+                    assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_769.jpg 769w,
+                    assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_870.jpg 870w,
+                    assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                  <source 
+                  media="(min-width: 768px) and (max-width: 991px)" 
+                  sizes="(max-width: 920px) 100vw, 920px"
+                  srcset="
+                    assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
+                    assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_869.jpg 869w,
+                    assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                  <source 
+                  media="(min-width: 992px) and (max-width: 1199px)" 
+                  sizes="(max-width: 920px) 100vw, 920px"
+                  srcset="
+                    assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_992.jpg 992w,
+                    assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                  <img 
+                  sizes="(max-width: 920px) 100vw, 920px" 
+                  srcset="
+                    assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w"
+                  src="assets/images/about/team--5_s3erob_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg"
+                  alt="gym team member" class="image-cover">
                 </picture>
 
-                <img src="assets/images/icons/plus.png" alt="plus sign" class="team__modal-button">
+                <img  data-srcset="assets/images/icons/plus.png" alt="plus sign" class="team__modal-button lazyload">
 
               </div>
 
@@ -374,31 +428,31 @@
                   media="(max-width: 767px)"
                   sizes="(max-width: 920px) 100vw, 920px"
                   srcset="
-                  assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_360.jpg 360w,
-                  assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_589.jpg 589w,
-                  assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_803.jpg 803w,
-                  assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                    assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_360.jpg 360w,
+                    assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_589.jpg 589w,
+                    assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_803.jpg 803w,
+                    assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
                   <source
                   media="(min-width: 768px) and (max-width: 991px)"
                   sizes="(max-width: 920px) 100vw, 920px"
                   srcset="
-                  assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
-                  assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_898.jpg 898w,
-                  assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                    assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
+                    assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_898.jpg 898w,
+                    assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
                   <source
                   media="(min-width: 992px) and (max-width: 1199px)"
                   sizes="(max-width: 920px) 100vw, 920px"
                   srcset="
-                  assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
+                    assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w">
                   <img
                   sizes="(max-width: 920px) 100vw, 920px"
                   srcset="
-                  assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w"
+                    assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg 920w"
                   src="assets/images/about/team--6_f0ffp6_ar_2_3,c_fill,g_auto__c_scale,w_920.jpg" 
-                    alt="gym team member" class="image-cover">
+                  alt="gym team member" class="image-cover">
                 </picture>
 
-                <img src="assets/images/icons/plus.png" alt="plus sign" class="team__modal-button">
+                <img  data-srcset="assets/images/icons/plus.png" alt="plus sign" class="team__modal-button lazyload">
 
               </div>
 
@@ -420,25 +474,36 @@
       <section class="page-section section grid ">
 
         <picture class="section__left-image">
-          <source media="(max-width: 767px)" sizes="(max-width: 1520px) 100vw, 1520px" srcset="
+          <source 
+          media="(max-width: 767px)" 
+          sizes="(max-width: 1520px) 100vw, 1520px"  
+          data-srcset="
             assets/images/about/values_t9ww21_ar_3_4,c_fill,g_auto__c_scale,w_460.jpg 460w,
             assets/images/about/values_t9ww21_ar_3_4,c_fill,g_auto__c_scale,w_885.jpg 885w,
             assets/images/about/values_t9ww21_ar_3_4,c_fill,g_auto__c_scale,w_1212.jpg 1212w,
             assets/images/about/values_t9ww21_ar_3_4,c_fill,g_auto__c_scale,w_1469.jpg 1469w,
             assets/images/about/values_t9ww21_ar_3_4,c_fill,g_auto__c_scale,w_1520.jpg 1520w">
-          <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1520px) 100vw, 1520px" srcset="
+          <source 
+          media="(min-width: 768px) and (max-width: 991px)" 
+          sizes="(max-width: 1520px) 100vw, 1520px"  
+          data-srcset="
             assets/images/about/values_t9ww21_ar_16_9,c_fill,g_auto__c_scale,w_768.jpg 768w,
             assets/images/about/values_t9ww21_ar_16_9,c_fill,g_auto__c_scale,w_1435.jpg 1435w,
             assets/images/about/values_t9ww21_ar_16_9,c_fill,g_auto__c_scale,w_1520.jpg 1520w">
-          <source media="(min-width: 992px) and (max-width: 1199px)" sizes="(max-width: 2400px) 50vw, 1200px" srcset="
+          <source 
+          media="(min-width: 992px) and (max-width: 1199px)" 
+          sizes="(max-width: 2400px) 50vw, 1200px"  
+          data-srcset="
             assets/images/about/values_t9ww21_ar_3_4,c_fill,g_auto__c_scale,w_496.jpg 496w,
             assets/images/about/values_t9ww21_ar_3_4,c_fill,g_auto__c_scale,w_889.jpg 889w,
             assets/images/about/values_t9ww21_ar_3_4,c_fill,g_auto__c_scale,w_1200.jpg 1200w">
-          <img sizes="(max-width: 1520px) 100vw, 1520px" srcset="
+          <img 
+          sizes="(max-width: 1520px) 100vw, 1520px"  
+          data-srcset="
             assets/images/about/values_t9ww21_ar_16_9,c_fill,g_auto__c_scale,w_1200.jpg 1200w,
             assets/images/about/values_t9ww21_ar_16_9,c_fill,g_auto__c_scale,w_1520.jpg 1520w"
-            src="assets/images/about/values_t9ww21_ar_16_9,c_fill,g_auto__c_scale,w_1520.jpg"
-            alt="a gym member training" class="image-cover image-filter">
+          data-srcset="assets/images/about/values_t9ww21_ar_16_9,c_fill,g_auto__c_scale,w_1520.jpg"
+          alt="a gym member training" class="image-cover image-filter lazyload">
         </picture>
 
         <h2 class="heading section__left-heading">More than experts, this is what we stand for as a team.</h2>
@@ -484,28 +549,39 @@
         <a href="class.html" class="grid">
 
           <picture class="section__full-width-image">
-            <source media="(max-width: 767px)" sizes="(max-width: 1327px) 100vw, 1327px" srcset="
+            <source 
+            media="(max-width: 767px)" 
+            sizes="(max-width: 1327px) 100vw, 1327px"  
+            data-srcset="
               assets/images/about/classes_bvljtr_ar_3_4,c_fill,g_auto__c_scale,w_1327.jpg 1327w">
-            <source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1982px) 100vw, 1982px" srcset="
+            <source 
+            media="(min-width: 768px) and (max-width: 991px)" 
+            sizes="(max-width: 1982px) 100vw, 1982px"  
+            data-srcset="
               assets/images/about/classes_bvljtr_ar_16_9,c_fill,g_auto__c_scale,w_768.jpg 768w,
               assets/images/about/classes_bvljtr_ar_16_9,c_fill,g_auto__c_scale,w_1327.jpg 1327w,
               assets/images/about/classes_bvljtr_ar_16_9,c_fill,g_auto__c_scale,w_1699.jpg 1699w,
               assets/images/about/classes_bvljtr_ar_16_9,c_fill,g_auto__c_scale,w_1982.jpg 1982w">
-            <source media="(min-width: 992px) and (max-width: 1199px)" sizes="(max-width: 2398px) 100vw, 2398px" srcset="
+            <source 
+            media="(min-width: 992px) and (max-width: 1199px)" 
+            sizes="(max-width: 2398px) 100vw, 2398px"  
+            data-srcset="
               assets/images/about/classes_bvljtr_ar_16_9,c_fill,g_auto__c_scale,w_992.jpg 992w,
               assets/images/about/classes_bvljtr_ar_16_9,c_fill,g_auto__c_scale,w_1440.jpg 1440w,
               assets/images/about/classes_bvljtr_ar_16_9,c_fill,g_auto__c_scale,w_1801.jpg 1801w,
               assets/images/about/classes_bvljtr_ar_16_9,c_fill,g_auto__c_scale,w_2179.jpg 2179w,
               assets/images/about/classes_bvljtr_ar_16_9,c_fill,g_auto__c_scale,w_2398.jpg 2398w">
-            <img sizes="(max-width: 2800px) 100vw, 2800px" srcset="
+            <img 
+            sizes="(max-width: 2800px) 100vw, 2800px" 
+            data-srcset="
               assets/images/about/classes_bvljtr_ar_21_9,c_fill,g_auto__c_scale,w_1200.jpg 1200w,
               assets/images/about/classes_bvljtr_ar_21_9,c_fill,g_auto__c_scale,w_1675.jpg 1675w,
               assets/images/about/classes_bvljtr_ar_21_9,c_fill,g_auto__c_scale,w_2076.jpg 2076w,
               assets/images/about/classes_bvljtr_ar_21_9,c_fill,g_auto__c_scale,w_2539.jpg 2539w,
               assets/images/about/classes_bvljtr_ar_21_9,c_fill,g_auto__c_scale,w_2799.jpg 2799w,
               assets/images/about/classes_bvljtr_ar_21_9,c_fill,g_auto__c_scale,w_2800.jpg 2800w"
-              src="assets/images/about/classes_bvljtr_ar_21_9,c_fill,g_auto__c_scale,w_2800.jpg"
-              alt="a group of gym members resting" class="image-cover image-filter">
+            data-srcset="assets/images/about/classes_bvljtr_ar_21_9,c_fill,g_auto__c_scale,w_2800.jpg"
+              alt="a group of gym members resting" class="image-cover image-filter lazyload">
           </picture>
 
           <div class="section__about-to-class">
@@ -524,7 +600,7 @@
 
       <div class="footer__logo">
         <a href="/">
-          <img src="assets/images/icons/logo--white.png" alt="company logo">
+          <img data-srcset="assets/images/icons/logo--white.png" alt="company logo" class="lazyload">
         </a>
         <p class="text-content text-content--footer text-content--grey">copyright 2021</p>
       </div>
@@ -536,7 +612,6 @@
             <li class="footer__list"><a class="footer__link" href="/">home</a></li>
             <li class="footer__list"><a class="footer__link" href="about.html">who we are</a></li>
             <li class="footer__list"><a class="footer__link" href="class.html">our classes</a></li>
-            <li class="footer__list"><a class="footer__link" href="blog.html">blog</a></li>
             <li class="footer__list"><a class="footer__link" href="contact.html">contact us</a></li>
           </ul>
         </nav>
