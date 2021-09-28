@@ -36,6 +36,7 @@ article {
 img {
   max-width: 100%;
   height: auto;
+  color: #000;
 }
 
 .image-cover{
