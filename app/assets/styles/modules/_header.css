@@ -120,13 +120,21 @@
 
   }
 
-  /* search icon */
-  &__search{
+  /* login icon */
+  &__login{
+    display: flex;
+    align-items: center;
 
-    @media (min-width: 62em){ /* 992px = 62em */
-      margin-right: 25px;
+    font-family: $mont;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+
+    & span{
+      margin-left: 12px;
+      color: #fff;
     }
-
   }
 
   /* mobile menu icon */

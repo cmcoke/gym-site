@@ -6,8 +6,8 @@ class MobileMenu{
     this.menuIcon = document.querySelector(".header__mobile-menu-icon")
     this.menuContent = document.querySelector(".header__menu-content")
     this.logo = document.querySelector(".header__logo a img");
-    this.search = document.querySelector(".header__search img");
     this.login = document.querySelector(".header__login img");
+    this.loginSpan = document.querySelector('.header__login span');
     this.menuLinks = document.querySelectorAll(".main-nav__link");
     this.menuLists = document.querySelectorAll('.main-nav__item');
     this.events()
@@ -38,11 +38,10 @@ class MobileMenu{
       // change the company logo to the black version
       this.logo.src = "./assets/images/icons/logo--black.png";
 
-      // change the search logo to the black version
-      this.search.src = "./assets/images/icons/search--black.png";
-
       // change the login logo to the black version
       this.login.src = "./assets/images/icons/profile--black.png";
+
+      this.loginSpan.style.color = '#000';
 
       // shows the X button
       this.menuIcon.classList.add("header__mobile-menu-icon--close");
@@ -70,11 +69,10 @@ class MobileMenu{
       // change the company logo to the white version
       this.logo.src = "./assets/images/icons/logo--white.png";
 
-      // change the search logo to the white version
-      this.search.src = "./assets/images/icons/search--white.png";
-
       // change the login logo to the white version
       this.login.src = "./assets/images/icons/profile--white.png";
+
+      this.loginSpan.style.color = '#fff';
       
       // hides the X button
       this.menuIcon.classList.remove("header__mobile-menu-icon--close");
